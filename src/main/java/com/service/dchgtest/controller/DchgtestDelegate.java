@@ -12,11 +12,10 @@ import java.util.Date;
 import java.util.Enumeration;
 
 @Component
-public class DchgtestDelegate
-{
+public class DchgtestDelegate {
 
-    public String helloworld(String name)
-    {
+    public String helloworld(String name){
+
         String result = "name: " + name;
 
         result = result + ". \nLocal time: " + new Date();

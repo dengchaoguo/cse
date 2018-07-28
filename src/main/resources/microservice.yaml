@@ -7,22 +7,18 @@ service_description:
 cse:
   service:
     registry:
-      address: https://100.114.173.202:30100
+      address: https://cse.cn-bj1.internal.ctclouds.com
       instance:
         watch: false
   config:
     client:
-      serverUri: https://100.114.173.202:30103
+      serverUri: https://cse.cn-bj1.internal.ctclouds.com
       refreshMode: 1
       refresh_interval: 5000
-  #monitor:
-    #client:
-      #serverUri: https://100.114.173.202:30109
   rest:
-    address: 0.0.0.0:8082
-  #When a local project is deployed as a container outside a cluster, you need to delete all monitor and credentials comments and configure the AK/SK.
-  credentials:
-    accessKey: 6MBREZCQGFD82X0MRGZJ
-    secretKey: 8IG84xq6maY26oc9X1sUqVRxz65QPvv4V7BW3zI8
-    akskCustomCipher: default
-    project: kweci03rg00fsp
+    address: 0.0.0.0:8080
+#  credentials:
+#    accessKey: 6MBREZCQGFD82X0MRGZJ
+#    secretKey: 8IG84xq6maY26oc9X1sUqVRxz65QPvv4V7BW3zI8
+#    akskCustomCipher: default
+#    project: kweci03rg00fsp
